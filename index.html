@@ -109,7 +109,7 @@
             <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
-    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+    <div  class="down-arrow floating-arrow"> <a onclick="PlayAudio()" href="#invitation"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
 <section id="invitation" class="section-padding">
@@ -119,7 +119,6 @@
                 <h3>We are getting hitched</h3>
                 <p>The dates are 27<sup>th</sup> & 28<sup>th</sup> of November '17 and we would like you to be a part of
                     it.</p>
-                <div class="share-bar"></div>
             </div>
         </div>
     </div>
@@ -534,4 +533,23 @@ function PlayAudio(){
     document.getElementById("musica1").play();
 }
 </script>
+
+    <!-- Welcome Page -->
+    <div class="loading-page bg-black" id="welcome" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh !important;">
+            <div class="text-center">
+                <h2 class="font-esthetic mb-4" style="font-size: 2.5rem;">The Wedding Of</h2>
+
+                <img src="./assets/images/bg.png" alt="background" class="img-center-crop rounded-circle border border-3 border-light shadow mb-4 mx-auto">
+
+                <h2 class="font-esthetic my-4" style="font-size: 2.5rem;">Wahyu &amp; Riski</h2>
+                <div id="guest-name" data-message="Kepada Yth Bapak/Ibu/Saudara/i"></div>
+
+                <button type="button" class="btn btn-light shadow rounded-4 mt-4" onclick="guest.open(this)">
+                    <i class="fa-solid fa-envelope-open me-2"></i>Open Invitation
+                </button>
+            </div>
+        </div>
+    </div>
+    
 </html>
